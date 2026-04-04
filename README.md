@@ -1,13 +1,14 @@
 <a id="readme-top"></a>
-[![Contributors][contributors-shield]][contributors-url]
-[![Forks][forks-shield]][forks-url]
-[![Stargazers][stars-shield]][stars-url]
-[![Issues][issues-shield]][issues-url]
-[![MIT License][license-shield]][license-url]
-[![C][c-shield]][c-url]
-
-<br />
 <div align="center">
+  
+  [![Contributors][contributors-shield]][contributors-url]
+  [![Forks][forks-shield]][forks-url]
+  [![Stargazers][stars-shield]][stars-url]
+  [![Issues][issues-shield]][issues-url]
+  [![MIT License][license-shield]][license-url]
+  [![C][c-shield]][c-url]
+
+  <br />
   <h3 align="center">myPreCompiler</h3>
 
   <p align="center">
@@ -89,5 +90,5 @@ Distributed under the MIT License. See `LICENSE` for more information.
 [issues-url]: https://github.com/fthinker/myprecompiler/issues
 [license-shield]: https://img.shields.io/github/license/fthinker/myprecompiler.svg?style=for-the-badge
 [license-url]: https://github.com/fthinker/myprecompiler/blob/main/LICENSE
-[c-shield]: https://img.shields.io/badge/C-00599C?style=for-the-badge&logo=c&logoColor=white
+[c-shield]: https://img.shields.io/badge/LANGUAGE-C-00599C?style=for-the-badge
 [c-url]: https://en.wikipedia.org/wiki/C_(programming_language)
