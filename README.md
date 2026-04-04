@@ -80,16 +80,6 @@ As a group project, contributors are limited to the existing team members. Howev
   <img src="https://contrib.rocks/image?repo=fthinker/myprecompiler" alt="Contributors list" />
 </a>
 
-## Star History
-
-<a href="https://www.star-history.com/?repos=FThinker%2FmyPreCompiler&type=date&legend=top-left">
- <picture>
-   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/chart?repos=FThinker/myPreCompiler&type=date&theme=dark&legend=top-left" />
-   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/chart?repos=FThinker/myPreCompiler&type=date&legend=top-left" />
-   <img alt="Star History Chart" src="https://api.star-history.com/chart?repos=FThinker/myPreCompiler&type=date&legend=top-left" />
- </picture>
-</a>
-
 ## License
 
 Distributed under the MIT License. See `LICENSE` for more information.
