@@ -9,7 +9,7 @@
   [![C][c-shield]][c-url]
 
   <br />
-  <h3 align="center">myPreCompiler</h3>
+  <h1 align="center"><b>myPreCompiler</b></h1>
 
   <p align="center">
     A custom C precompiler developed as a group project for the exam "Sistemi Operativi II" in Sapienza's Bachelor of Computer Science course.
