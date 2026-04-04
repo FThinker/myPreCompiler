@@ -39,21 +39,37 @@ This project strictly requires the **GNU Compiler Collection (GCC)** to compile 
 
 1. Clone the repo
   ```shell
-  git clone ...
+  git clone https://github.com/fthinker/myprecompiler.git
   ```
 2. Navigate to the project directory
   ```shell
-  cd ...
+  cd myprecompiler
   ```
 3. Compile the project using GCC
   ```
-  gcc ...
+  gcc src/*.c -o myPreCompiler
   ```
 ## Usage
 
-Run the compiled executable to parse and test your C data structures:
+Run the compiled executable to parse and test your C source files. The program requires an input C file and can optionally output to a file or print verbose statistics.
+
+<br>
+
+Read input and save the statistics to an output file
   ```shell
-  tbd ...
+  ./myPreCompiler -i input_file.c -o output_file
+  ```
+<br>
+
+Read input and print the statistics to stdout (verbose mode)
+  ```shell
+  ./myPreCompiler -vi input_file.c
+  ```
+<br>
+
+Read input, save to an output file AND print to stdout (verbose mode)
+  ```shell
+  ./myPreCompiler -i input_file.c -o output_file -v
   ```
 
 ## Contributors
