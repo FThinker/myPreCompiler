@@ -82,9 +82,7 @@ As a group project, contributors are limited to the existing team members. Howev
 
 ## Star History
 
-See how our project is growing!
-
-<a href="https://www.star-history.com/?repos=FThinker%2FmyPreCompiler&type=date&logscale=&legend=top-left">
+<a href="https://www.star-history.com/?repos=FThinker%2FmyPreCompiler&type=date&legend=top-left">
  <picture>
    <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/chart?repos=FThinker/myPreCompiler&type=date&theme=dark&legend=top-left" />
    <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/chart?repos=FThinker/myPreCompiler&type=date&legend=top-left" />
