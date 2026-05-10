@@ -29,6 +29,16 @@ typedef struct TypedefNode {
 } TypedefNode;
 
 
+// ----------------------------------------------------------------------------------------- //
+
+
+typedef struct LineNode {
+    char* line_content;
+    int line_number;
+    struct LineNode* next;
+} LineNode;
+
+
 // ######################################################################################### //
 //                                        FUNCTIONS                                          //
 // ######################################################################################### //
@@ -71,6 +81,21 @@ TypedefNode* create_typedef(const char* name);
 
 
 /**
+ * @brief Creates a new singular line node.
+ *
+ * Dynamically allocates memory for a file line content and its line number.
+ *
+ * @param content The raw string content of the line.
+ * @param line_number The line number in the source file.
+ * @return The created node, or NULL if heap memory is insufficient.
+ */
+LineNode* create_line(const char* content, int line_number);
+
+
+// ----------------------------------------------------------------------------------------- //
+
+
+/**
  * @brief Appends a variable node to the list.
  *
  * If the list is empty, the passed node becomes the new head of the list.
@@ -103,6 +128,18 @@ void add_typedef(TypedefNode** head, TypedefNode* new_node);
 
 
 /**
+ * @brief Appends a line node to the linked list.
+ *
+ * @param head The line list's head.
+ * @param new_node The line node to append.
+ */
+void add_line(LineNode** head, LineNode* new_node);
+
+
+// ----------------------------------------------------------------------------------------- //
+
+
+/**
  * @brief Releases the heap memory occupied by a variable linked list (in a safe way).
  *
  * The list is freed in an inside-out manner, prioritizing field deletion before node deletion in order to avoid memory leaks.
@@ -123,6 +160,17 @@ void free_variables(VariableNode* head);
  * @param head The typedef list's head.
  */
 void free_typedefs(TypedefNode* head);
+
+
+// ----------------------------------------------------------------------------------------- //
+
+
+/**
+ * @brief Releases the heap memory occupied by a line linked list.
+ *
+ * @param head The line list's head.
+ */
+void free_lines(LineNode* head);
 
 
 // ----------------------------------------------------------------------------------------- //

@@ -47,6 +47,24 @@ TypedefNode* create_typedef(const char* name){
 // ----------------------------------------------------------------------------------------- //
 
 
+LineNode* create_line(const char* content, int line_number){
+    LineNode* new_line = malloc(sizeof(LineNode));
+
+    if(new_line == NULL){
+        // handle this
+        return NULL;
+    }
+
+    new_line->line_content = strdup(content);
+    new_line->line_number = line_number;
+    new_line->next = NULL;
+
+    return new_line;
+}
+
+// ----------------------------------------------------------------------------------------- //
+
+
 void add_variable(VariableNode** head, VariableNode* new_node){
     // Case 1: list is empty
     if(*head == NULL){
@@ -87,10 +105,28 @@ void add_typedef(TypedefNode** head, TypedefNode* new_node){
 // ----------------------------------------------------------------------------------------- //
 
 
+void add_line(LineNode** head, LineNode* new_node){
+    if(*head == NULL){
+        *head = new_node;
+        return;
+    }
+
+    LineNode* current = *head;
+    while(current->next != NULL){
+        current = current->next;
+    }
+
+    current->next = new_node;
+    return;
+}
+
+// ----------------------------------------------------------------------------------------- //
+
+
 void free_variables(VariableNode* head){
     VariableNode* current = head;
 
-    while(current->next != NULL){
+    while(current != NULL){
         VariableNode* next_node = current->next;
         free(current->name);
         free(current->type);
@@ -106,7 +142,7 @@ void free_variables(VariableNode* head){
 void free_typedefs(TypedefNode* head){
     TypedefNode* current = head;
 
-    while(current->next != NULL){
+    while(current != NULL){
         TypedefNode* next_node = current->next;
         free(current->name);
         free(current);
@@ -114,6 +150,21 @@ void free_typedefs(TypedefNode* head){
     }
 }
 
+
+
+// ----------------------------------------------------------------------------------------- //
+
+
+void free_lines(LineNode* head){
+    LineNode* current = head;
+
+    while(current != NULL){
+        LineNode* next_node = current->next;
+        free(current->line_content);
+        free(current);
+        current = next_node;
+    }
+}
 
 
 // ----------------------------------------------------------------------------------------- //
