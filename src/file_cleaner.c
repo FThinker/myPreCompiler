@@ -89,11 +89,12 @@ LineNode* clean_file(LineNode* head) {
             should_eliminate = 1;
         }
 
-        if(should_eliminate != 0){
-            if(prev != NULL){
+        // node removal and de-allocation logic
+        if (should_eliminate != 0) {
+            if (prev != NULL) { // node to delete is somewhere down the list
                 prev->next = next;
             } else {
-                head = next;
+                head = next; // node to delete is the head
             }
             free(current->line_content);
             free(current);
@@ -103,7 +104,7 @@ LineNode* clean_file(LineNode* head) {
         }
         current = next;
     }
-    //The return is needed because the head of the linked list might change
+
     return head;
 }
 
