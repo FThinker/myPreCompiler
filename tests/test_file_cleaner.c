@@ -110,7 +110,7 @@ void test_clean_file(){
 
 
 int main() {
-    printf(COLOR_GREEN "===== BEGINNING VALIDATOR TEST =====" COLOR_RESET "\n");
+    printf(COLOR_GREEN "===== BEGINNING FILE CLEANER TEST =====" COLOR_RESET "\n");
     
     test_clean_line_start();
     test_clean_line_end();
