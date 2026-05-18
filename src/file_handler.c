@@ -77,3 +77,23 @@ LineNode* open_file(const char* filepath) {
 
     return head;
 }
+
+
+// ----------------------------------------------------------------------------------------- //
+
+
+void write_file(const char* output_filepath, const int valid_name_false, const int is_used_false){
+    // Check 0: Validate filepath pointer
+    if (output_filepath == NULL) {
+        fprintf(stderr, "Error: provided filepath is NULL.\n");
+        return NULL;
+    }
+
+    // Attempt to open the file
+    FILE* file = fopen(output_filepath, "w"); //decidere se vogliamo solo scriverlo o aggiungere contenuti ad un file già pieno "w/a"
+    if (file == NULL) {
+        perror("Error opening input file");
+        return NULL;
+    }
+
+}

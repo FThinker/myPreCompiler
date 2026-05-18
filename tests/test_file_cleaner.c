@@ -5,7 +5,7 @@
 #include "../src/data_structures.h"
 #include "../src/data_structures.c"
 #include "../src/file_cleaner.h"
-#include "../src/file_cleaner.c"
+//#include "../src/file_cleaner.c"
 
 #define COLOR_GREEN "\033[0;32m"
 #define COLOR_RED   "\033[0;31m"

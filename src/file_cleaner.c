@@ -3,6 +3,7 @@
 #include <string.h>
 #include <ctype.h>
 #include "data_structures.h"
+#include "file_cleaner.h"
 
 
 // ----------------------------------------------------------------------------------------- //
